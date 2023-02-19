@@ -66,9 +66,6 @@ class MainActivity : AppCompatActivity() {
                         json.jsonObject.toString()
                     )
 
-                    parsedJson.response?.docs?.let { list ->
-                        articles.addAll(list)}
-
                     // Save the articles
                     parsedJson.response?.docs?.let { list ->
                         articles.addAll(list)
